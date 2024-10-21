@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý Thuyết Form</title>
+</head>
+<body>
+    <form action="program.php" method="post" name="login_form">
+        <label for="">FirstName</label> <br>
+        <input type="text" name="firstname"><br>
+        <label for="">LastName</label> <br>
+        <input type="text" name="lastname">
+    </form>
+    <hr>
+    <!-- Nếu thuộc tính for của label mà trùng với thuộc tính id của input thì khi nhấp vào label thì dấu nháy sẽ chuyển vào input -->
+    <!-- Thuộc tính name của input Khi gửi data lên server phải có thuộc tính name có thể truy xuất 1 số giá trị Javascript -->
+     <!-- disable vô hiệu hóa thẻ input -->
+      <!-- value là giá trị của ô nhập data -->
+       <!-- autocomplete="off" tắt chế độ nhập tư động -->
+        <!-- thuộc tính required yêu cầu bắt buộc phải nhập -->
+    <form action="/login.html" method="post" autocomplete="off">
+        <label for="">FirstName : <input type="text" name="firstname" placeholder="Mời bạn nhập tên"> </label> <br>
+
+        <label for="lastname_id">LastName : <input id="lastname_id" type="text" name="lastname" value="Hoa"> </label>
+        <br>
+
+        <input type="number"> <br>
+        <input type="password"> <br>
+        <input type="password"> <br>
+        <input type="email" required> <br>
+        <input type="radio" name="gender"> Nam
+        <input type="radio" name="gender">Nữ
+        <input type="radio" name="gender">Khác
+
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> Javascript
+
+        <input type="date"> <br>
+        <input type="month"> <br>
+        <input type="time"> <br>
+        <input type="color"> <br>
+        <input type="file"> <br>
+        <progress></progress>
+
+        <select>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Đà Nẵng" selected>Đà Nẵng</option>
+            <option value="Sài Gòn">Sài Gòn</option>
+        </select>
+        <br>
+        <textarea name="" id="" rows="6" cols="6">
+       
+
+        </textarea>
+        <br>
+
+
+        <button>Click</button>
+    </form>
+    
+</body>
+</html>
