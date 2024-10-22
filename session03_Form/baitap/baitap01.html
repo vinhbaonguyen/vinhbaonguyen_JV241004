@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài Tập 1 Tạo Form Đơn Giản</title>
     <style>
-        
-        form {background-color: aqua;
-             }
-        fieldset {background-color: rgb(105, 233, 105);
-             }
-        legend {background-color : yellow;
-                font-size: 30px;
-               }
+        form {
+            background-color: aqua;
+        }
+
+        fieldset {
+            background-color: rgb(105, 233, 105);
+        }
+
+        legend {
+            background-color: yellow;
+            font-size: 30px;
+        }
     </style>
 </head>
+
 <body>
     <form action="/your_hobby_input_form.html" method="post" autocomplete="off">
         <fieldset>
-            <legend align="center" >Sở Thích Của Bạn</legend>
+            <legend align="center">Sở Thích Của Bạn</legend>
             <table>
                 <tr>
                     <th>
                         <label for="fname">Họ và Tên </label>
                     </th>
                     <td>
-                        <input type="text" id = "fname">
-                    </td>                    
+                        <input type="text" id="fname">
+                    </td>
                 </tr>
                 <tr>
                     <th>
                         <label for="lname">Email</label>
                     </th>
                     <td>
-                        <input type="email" id = "lname">
+                        <input type="email" id="lname">
                     </td>
                 </tr>
                 <tr>
@@ -41,16 +47,20 @@
                         <label for="lhobby">Sở Thích</label>
                     </th>
                     <td>
-                        <input type="checkbox" name="csport" id="csport" value="Thể Thao"> <label for="csport">Thể Thao</label>
-                        <input type="checkbox" name="cmusic" id="cmusic" value="Âm Nhạc"> <label for="cmusic">Âm Nhạc</label>
-                        <input type="checkbox" name="creadbook" id="creadbook" value="Đọc Sách"> <label for="creadbook">Đọc Sách</label><br>
-                        <input type="checkbox" name="cinternet" id="cinternet" value="Lướt Web"> <label for="cinternet">Lướt Web</label>
+                        <input type="checkbox" name="csport" id="csport" value="Thể Thao"> <label for="csport">Thể
+                            Thao</label>
+                        <input type="checkbox" name="cmusic" id="cmusic" value="Âm Nhạc"> <label for="cmusic">Âm
+                            Nhạc</label>
+                        <input type="checkbox" name="creadbook" id="creadbook" value="Đọc Sách"> <label
+                            for="creadbook">Đọc Sách</label><br>
+                        <input type="checkbox" name="cinternet" id="cinternet" value="Lướt Web"> <label
+                            for="cinternet">Lướt Web</label>
                         <input type="checkbox" name="cgame" id="cgame" value="Chơi Game">
                         <label for="cgame">Chơi Game</label>
                         <input type="checkbox" name="cdrama" id="cdrama" value="Điện Ảnh">
                         <label for="cdrama">Điện Ảnh</label><br>
                         <input type="checkbox" name="ctravel" id="ctravel" value="Du Lịch">
-                        <label for="ctravel">Du Lịch</label>                          
+                        <label for="ctravel">Du Lịch</label>
                     </td>
                 </tr>
                 <tr>
@@ -64,6 +74,7 @@
             </table>
         </fieldset>
     </form>
-    
+
 </body>
+
 </html>
