@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The z-index Property</title>
+    <style>
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+        }
+        .black-box {
+            position: relative;
+            z-index: 1;
+            border: solid 2px blueviolet;
+            height: 100px;
+            margin: 30px;
+        }
+        .gray-box {
+            position: absolute;
+            background-color: lightgray;
+            height: 60px;
+            z-index: 3;
+            border: gray solid 3px;
+            width: 70%;
+            left:50px;
+            top:50px
+        }
+        .green-box {
+            position: absolute;
+            background-color: lightgreen;
+            border: solid 2px green;
+            left:270px;
+            top:-15px;
+            z-index: 2;
+            width: 30%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/css/css_z-index.asp">Link Hướng Dẫn</a>
+    
+    <h1>This is a heading</h1>
+    <img src="../../image/img_tree.png" alt="">
+    <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+    <hr><br>
+
+
+
+    <h1>Z-index Example</h1>
+    <p>An element with greater stack order is always above an element with a lower stack order.</p>
+    <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+
+    </div>
+        
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        /* unvisited link */        
+        a:link {
+            color:red;
+        }
+        /* visited link */
+        a:visited {
+            color:green;
+        }
+        /* mouse over link */
+        a:hover {
+            color: blueviolet;
+        }
+        /* selected link */
+        a:active {
+            color: yellowgreen;
+        }
+
+        a.highlight:hover {
+            color: red;
+            background-color: blueviolet;
+            font-size: 22px;
+        }
+
+        div {
+            background-color: green;
+            text-align: center;
+            padding: 25px;
+            color:yellow;
+            border: red solid 3px;
+            
+        }
+        div:hover{
+            background-color: aquamarine;
+            color: black;
+            border: green double 6px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <a href="https://vinhbaodev.pythonanywhere.com/" target="_blank">Link Bài tập Django</a>
+
+    <hr>
+
+    <h1>Pseudo-classes and HTML Classes</h1>
+    <p>When you hover over the first link below, it will change color and font size:</p>
+    <p><a class="highlight" href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">CSS Syntax</a></p>
+
+    <hr>
+
+    <p>Mouse over the div element below to change its background color:</p>
+
+    <div>Mouse Over Me</div>
+
+    <hr>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Module(ボックスモデル)</title>
+    <style>
+        p {
+            background-color: green;
+            color: #fff;
+            text-align: center;
+            width: 110px;
+            height: 110px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-style: double;   /* solid,dotted,dashed,double */
+            border-width:8px;
+            border-color: red;
+        }
+        p.short_hand {
+            box-sizing: border-box;
+            width: 160px;
+            padding: 6px;
+            border: 4px solid #000;
+            border-radius: 20px;
+        }
+        h1 {
+            box-sizing: border-box;        
+        }
+        h2 {
+            box-sizing: content-box;
+            border: solid 10px green;
+            height: 100px;
+            width: 100px;
+        }
+        .leftBottom {
+            border-left: 10px solid red;
+            border-bottom: 3px solid red;
+        }
+        .topBottom {
+            border-top: 4px double green;
+            border-bottom: 4px double green;
+        }
+        .fourColors {
+            border-top: 10px solid #99f;
+            border-bottom: 10px solid #00a;
+            border-left: 10px solid #ccf;
+            border-right: 10px solid #55f;
+        }
+    </style>
+</head>
+<body>
+    <p>基本的なpaddingの指定の仕方
+    </p>
+
+    <p class="short_hand">ショートハンドでボーダーを指定</p>
+
+    <h1 class="leftBottom">左辺・下辺のみ</h1>
+    <h1 class="topBottom">上下に二重線</h1>
+    <h1 class="fourColors">1辺ずつ色を変える</h1>
+    <h2> Me yeu con</h2>
+    
+</body>
+</html>

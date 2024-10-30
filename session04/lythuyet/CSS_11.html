@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    
+    <style>
+        .circle {list-style-type: circle;}
+        .square {list-style-type: square;}
+        .roma {list-style-type: upper-roman;}
+        .alpha {list-style-type: lower-alpha;}
+        .image {list-style-image: url(../../image/OIP.jpg);}
+        .shorthand {list-style:circle outside url(../../image/OIP.jpg);}
+        ul {
+            background-color: lightblue;
+            color: black;
+            padding: 20px;
+            
+        }
+        ul li {
+            background-color: grey;
+            color: white;
+            margin-left: 35px;
+            padding: 5px;
+            
+        }
+
+        ol {
+            background-color: lawngreen;
+            color: white;
+            padding: 20px;
+            list-style-position: inside;
+        }
+        ol li {
+            background-color: green;
+            margin: 5px
+        }
+
+    </style>
+
+    <script src="https://kit.fontawesome.com/c7e9d344d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>The list-style-type Property</h1>
+    <p>Example of unordered lists:</p>
+    <ul class="circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Cola</li>
+    </ul>
+    <ul class="square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Cola</li>
+    </ul>
+    <p>Example of ordered lists:</p>
+    <ol class="roma">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Cola</li>
+    </ol>
+    <ol class="alpha">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Cola</li>
+    </ol>
+
+    <ul class="image">
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Cola</li>
+    </ul>
+    
+    <ol class="shorthand">
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Cola</li>
+    </ol>
+    
+    
+</body>
+</html>

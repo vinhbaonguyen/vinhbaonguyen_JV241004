@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tham khảo thêm CSS(Webデザイナ基本入門)</title>
+    <style>
+        #colorRed {
+            color: red;
+        }
+        .colorBlue {
+            color: blue;
+        }
+
+        input[type="text"] {background-color: aquamarine;}
+        input[type="email"] {
+            background-color: blue;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="colorRed" class="colorBlue">idとclassで指定</li>
+        <li class="colorBlue">classで指定</li>
+        <li class="colorBlue">classで指定</li>
+        <li>id/classなし</li>
+    </ul>
+    <hr>
+
+    <form action="/register.html" method="post" autocomplete="off">
+        <fieldset>
+            <legend >Register Information</legend>
+            <table>
+                <tr>
+                    <label for="lname">Họ và Tên</label>
+                </tr>
+                <br>
+                <tr>
+                    <input type="text" name="" id="lname">
+                </tr>                
+                <br>                
+                <tr>
+                    <label for="lemail">Email</label>
+                </tr>
+                <br>
+                <tr>
+                    <input type="email" name="" id="lemail">
+                </tr>
+                <br>
+                <tr>
+                    <label for="ltel">Số Điện Thoại</label>
+                </tr>
+                <br>
+                <tr>
+                    <input type="number" name="" id="ltel">
+                </tr>
+                <br>
+                <tr>
+                    <label >Giới Tính</label>
+                </tr>
+                <br>
+                <tr>
+                    <input type="radio" name="gender" value="Male" id="lgendermale" checked>
+                    <label for="lgendermale">Nam</label>
+                    <input type="radio" name="gender" value="Female" id="lgenderfemale">
+                    <label for="lgenderfemale">Nữ</label>
+                </tr>                
+            </table>
+            <br>
+            <input type="submit" value="Đăng Ký" name="" id="">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What are CSS Animations?</title>
+    <style>
+        div {
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            animation-name: changecolor;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+        @keyframes changecolor{
+            from {
+                background-color: blueviolet;
+                color: black ;
+             }
+            to {background-color: yellow;
+                color:red;
+                font-size: 60px;
+                text-align: center;
+                padding: 10px;}
+            }
+    </style>
+</head>
+<body>
+    <div>Animation</div>
+    
+</body>
+</html>

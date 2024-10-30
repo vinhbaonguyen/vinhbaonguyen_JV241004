@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The display Property</title>
+    <style>
+        li {
+            display: inline;
+        }
+        .imgbox {
+            float: left; /* tham khảo float ➡ https://www.w3schools.com/css/css_float.asp */
+            text-align: center;
+            width:120px;
+            border: solid yellow 2px;
+            margin: 5px;
+            padding: 6px;
+        }
+        button {
+            width: 100%;
+        }
+        strong {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">Link Hướng Dẫn</a>
+    <hr>
+    <p>Display a list of links as a horizontal menu:</p>
+
+    <ul>
+        <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+        <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+        <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+    </ul>
+
+    <h2>Difference between display:none and visiblity: hidden</h2>
+    <p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+    <p>display:none removes the element from the document. It does not take up any space.</p>
+
+    <hr>
+    
+    <h1>This is a Heading</h1>
+    <p>This is a <strong>paragraph</strong></p>
+
+    <hr>
+
+    <div class='imgbox' id='imgbox1'>Box1<br>        
+        <img src="../../image/nikujaga1428.jfif " alt="nikujaga" style="width:100%" height="100px" width="120px">
+        <button onclick="removeElement()">Remove</button>
+    </div>
+    <div class='imgbox' id='imgbox2'>Box2<br>
+        <img src="../../image/6b27e810-3fc0-407d-a145-76d4f983ee3a.jpg" alt="htmlcssjs" style="width: 100%" height="100px" width="120px">
+        <button onclick="changeVisibility()">Hide</button>
+    </div>
+    <div class='imgbox' id='imgbox3'>Box3
+        <img src="../../image/OIP.jpg" height="100px" width="120px" alt="1" style="width: 100%;">
+        <button onclick="resetElement()">Reset All</button>
+
+    </div>
+    
+    
+
+    
+    
+
+    <script>
+        function removeElement() {
+          document.getElementById("imgbox1").style.display = "none";
+        }
+        
+        function changeVisibility() {
+          document.getElementById("imgbox2").style.visibility = "hidden";
+        }
+        
+        function resetElement() {
+          document.getElementById("imgbox1").style.display = "block";
+          document.getElementById("imgbox2").style.visibility = "visible";
+        }
+    </script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Boxes</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: dodgerblue;
+        }
+        .flex-container .box {
+            width: 50%;
+            background-color: #f1f1f1;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_float_boxes_flex" target="_blank">đường link hướng dẫn</a>
+    <hr>
+    <h1>Flexible Boxes</h1>
+    <div class="flex-container">
+        <div class="box" >
+            <p>Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</p>
+        </div>
+        <div class="box">
+            <p>Box 2 - My height will follow Box 1.</p>
+        </div>
+    </div>
+    <p>Try to resize the browser window to see the flexible layout.</p>
+    <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+    
+</body>
+</html>

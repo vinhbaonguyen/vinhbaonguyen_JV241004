@@ -1,0 +1,22 @@
+.header_text {
+    background-color: yellowgreen;
+}
+.newsyearfood{
+    background-color: grey;
+    line-height: 3;
+}
+
+.mark_text {
+    color: blueviolet;
+    background-color: red;
+}
+
+.none {
+    text-decoration: none;
+    }
+.line-through{
+    text-decoration: line-through;
+}
+.overline{
+    text-decoration: overline;
+}
