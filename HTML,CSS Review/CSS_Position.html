@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        div.container {
+            display: flex;
+        }
+        div.item {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            border: solid black 3px;
+        }
+
+        div .item1, .item3 {
+            background-color: orange;
+        }
+
+        div .item2 {
+            background-color:lightgreen;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+        div .item4 {
+            background-color: red;
+            position: absolute;
+            top: 160px;
+            left:160px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">One</div>
+        <div class="item item2">Two</div>
+        <div class="item item3">Tree</div>
+        <div class="item item4">Four</div>
+    </div>
+</body>
+</html>

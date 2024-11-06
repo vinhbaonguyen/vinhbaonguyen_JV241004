@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng layout đơn giản bằng Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            color: white;
+            line-height: 100px;
+            height: 500px;
+            
+        }
+        .container .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: blue;
+            border: solid black 2px;
+            text-align: center;
+            line-height: 100px;
+            padding: 15px;
+            font-size: 20px;
+            
+        } 
+        .container .left_square, .right_square {
+            width: 150px;
+            height: 150px;
+            border: solid 2px black;
+            background-color: red;
+            line-height: 100px;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 14px;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_square">
+            <p>Hình vuông trái</p>
+        </div>
+        <div class="circle">
+            <p>Hình Tròn</p>
+        </div>
+        <div class="right_square">
+            <p>Hình vuông phải</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Xây dựng giao diện form liên hệ</title>
+    <style>
+        .container {
+            display: flex;
+            gap:10px
+        }
+        .container > .containerchild1 {
+            display: flex;
+            flex-direction: column;
+            gap:20px
+        }
+        .container > .containerchild2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/contact_form" style="width: 35%;">
+        <fieldset>
+            <h2>Gửi thông tin liên hệ với chúng tôi</h2>
+            <div class="container">
+                <div class="containerchild1">
+                    <input type="text" placeholder="Họ và tên">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Địa chỉ">
+                    <input type="text" placeholder="Số điện thoại">                    
+                </div>
+                <div class="containerchild2">
+                    <textarea name="" id="" placeholder="Nội Dung Liên Lạc" cols="30" rows="10"></textarea>
+                    <input type="button" value="Gửi"
+                    style="background-color: dodgerblue;color: aliceblue;">
+                </div>            
+            </div>
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

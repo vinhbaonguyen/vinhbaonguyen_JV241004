@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Xây dựng giao diện danh sách bất động sản</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: solid 1px black;
+            padding-left: 16px;
+            /*  padding: 10px; */
+            /* height: 100%; */
+            background-color: green;
+            /* width: 100%; */
+            /*  justify-content: left; */
+        }
+
+        .container .item {
+            border: solid 0.2px black;
+            color: red;
+            line-height: 20px;
+            height: 100%;
+            width: 280px;
+            padding: 6px;
+        }
+
+        /*  .container .thumbnail {
+            width: 100%;
+            height: 100%;
+        } */
+
+        .container .thumbnail img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .container .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px;
+            color: dodgerblue;
+        }
+
+        .container .footer .detail input[value="Xem Chi Tiết"] {
+            color: dodgerblue;
+            width: 140px;
+        }
+
+        .container .footer .detail .right {
+            position: relative;
+            left: 120px;
+            bottom: 20px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                background-color: aquamarine;
+
+            }
+            .item {
+                height: 100%;
+                flex: 22%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .container {
+                background-color: tomato;
+            }
+
+            .item {
+                height: 100%;
+                flex: 40%;
+            }
+        }
+
+        @media (max-width: 590px) {
+            .container {
+                background-color: lightblue;
+            }
+
+            .item {
+                height: 100%;
+                flex: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <div class='thumbnail'>
+                <img src="../../session07/image/OIP.jfif" alt="">
+            </div>
+            <div><i class="fa-solid fa-location-dot"></i>
+                Khám phá đất đai bán chạy nhất Đông Anh</div>
+            <div><i class="fa-solid fa-star"></i>
+                Diện tích trên 40 m²</div>
+            <div><i class="fa-solid fa-crosshairs"></i>
+                Mục đích sử dụng Đất Ở</div>
+            <div class="footer">
+                <div class="price">20 tỷ</div>
+                <div class="detail">
+                    <input type="button" value="Xem Chi Tiết">
+                    <div class="right">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class='thumbnail'>
+                <img src="../../session07/image/OIP.jfif" alt="">
+            </div>
+            <div><i class="fa-solid fa-location-dot"></i>
+                Khám phá đất đai bán chạy nhất Đông Anh</div>
+            <div><i class="fa-solid fa-star"></i>
+                Diện tích trên 40 m²</div>
+            <div><i class="fa-solid fa-crosshairs"></i>
+                Mục đích sử dụng Đất Ở</div>
+            <div class="footer">
+                <div class="price">20 tỷ</div>
+                <div class="detail">
+                    <input type="button" value="Xem Chi Tiết">
+                    <div class="right">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class='thumbnail'>
+                <img src="../../session07/image/OIP.jfif" alt="">
+            </div>
+            <div><i class="fa-solid fa-location-dot"></i>
+                Khám phá đất đai bán chạy nhất Đông Anh</div>
+            <div><i class="fa-solid fa-star"></i>
+                Diện tích trên 40 m²</div>
+            <div><i class="fa-solid fa-crosshairs"></i>
+                Mục đích sử dụng Đất Ở</div>
+            <div class="footer">
+                <div class="price">20 tỷ</div>
+                <div class="detail">
+                    <input type="button" value="Xem Chi Tiết">
+                    <div class="right">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class='thumbnail'>
+                <img src="../../session07/image/OIP.jfif" alt="">
+            </div>
+            <div><i class="fa-solid fa-location-dot"></i>
+                Khám phá đất đai bán chạy nhất Đông Anh</div>
+            <div><i class="fa-solid fa-star"></i>
+                Diện tích trên 40 m²</div>
+            <div><i class="fa-solid fa-crosshairs"></i>
+                Mục đích sử dụng Đất Ở</div>
+            <div class="footer">
+                <div class="price">20 tỷ</div>
+                <div class="detail">
+                    <input type="button" value="Xem Chi Tiết">
+                    <div class="right">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng giao diện header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-around;
+            background-color: dodgerblue;
+            color: white;
+            gap: 14px;
+            padding: 4px;
+            
+        }
+        .search {
+            position: relative;
+            top:0px;
+            right:40px;
+        }
+        .item {
+            /* background-color: red; */
+            height: 56px;
+            line-height: 56px;
+        }
+        .usericon {
+            position: relative;
+            left:50px;
+            /* background-color: red; */
+        }
+        .search {
+            position: relative;
+            /* background-color: red; */
+            right: 75px;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="item home" >
+            <a href="#home/" style="text-decoration: none; color: white ">Trang Chủ</a>
+        </div>
+        <div class="item product"> Sản phẩm</div>
+        <input type="item text">
+        <div class="item search" >
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+        
+        <div class="item introduce">Giới Thiệu</div>
+        <div class="item contact">Liên Hệ</div>
+        <div class="item register">Đăng ký</div>
+        <div class="item login">Đăng Nhập</div>
+        <div class="item usericon" ><i class="fa-solid fa-user"></i></div>
+        <div class="item username">Nguyễn Văn Nam</div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng giao diện form đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            border: solid lightgray 0.5px;
+            padding: 4px;
+        }
+        .container > .container_header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container > .container_body {
+            display: flex;
+            flex-direction: column;
+            gap:6px
+        }
+        .facebook {
+            position: relative;
+            bottom: 29px;
+            left: 100px;
+            
+        }
+
+        .google {
+            position: relative;
+            bottom: 30px;
+            left: 90px;
+        }
+        input[type="button"]:hover {
+            background-color: aquamarine;
+            
+        }
+        input[type="text"] {
+            border: solid dodgerblue 1px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container_header">
+            <h2>Đăng Ký Tài Khoản</h2>
+            <h3><i class="fa-solid fa-xmark"></i></h3>
+
+        </div>
+        <div class="container_body">
+            <p>Số Điện Thoại</p>
+            <input type="text">
+            <input type="button" value="Tiếp tục" style="background-color: dodgerblue ;color : white">
+            <p style="text-align: center;">Hoặc</p>
+            <input type="button" value="Đăng nhập Facebook" style="height: 30px;">
+            
+            <div class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+
+            <input type="button" value="Đăng Nhập bằng Google" style="height: 30px;">
+            <div class="google">
+                <i class="fa-brands fa-google"></i>
+            </div>
+            
+            <p>Bạn có tài khoản?<a href="/register.html">Đăng nhập tại đây</a></p>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The flex-wrap Property</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: dodgerblue;
+            
+            flex-wrap: wrap;
+        }
+        .container > div {
+            width: 100px;
+            background-color: azure;
+            color: black;
+            padding: 20px;
+            line-height: 75px;
+            margin: 6px;
+            text-align: center;
+            font-size:30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The flex-wrap Property</h1>
+    <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+    </div>
+    <p>Try resizing the browser window.</p> 
+</body>
+</html>
