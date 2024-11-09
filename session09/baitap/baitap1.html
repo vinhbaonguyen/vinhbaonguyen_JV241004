@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng câu lệnh điều kiện</title>
+</head>
+<body>
+    <script>
+        let userYearold = Number(prompt("Bạn sinh năm bao nhiêu"));
+        let Year = new Date().getFullYear();
+        console.log(typeof Year);
+        
+        if (userYearold >= 1900 && userYearold <= 2024 ) 
+        { console.log("Tuổi của bạn là:",Year - userYearold);
+        document.write("Tuổi của bạn là:",Year - userYearold)
+        } 
+        else {
+            console.log("Bạn đã nhập sai vui lòng nhập năm sinh trong phạm vi từ 1900 đến 2024");
+        }
+    </script>
+    
+</body>
+</html>

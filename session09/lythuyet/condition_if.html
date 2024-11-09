@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const hour = new Date().getHours()
+        let greeting
+        if (hour > 8 && hour < 12) {
+            greeting = "Good Day"
+        } else if (hour >= 12 && hour <= 19) {
+            greeting = "Good evening"
+        } else {
+            greeting = "Good night"
+        }
+
+        document.write("Kết quả lời chào là :",greeting)
+
+
+    </script>
+    
+</body>
+</html>

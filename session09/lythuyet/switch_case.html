@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script>
+        switch ("5") {
+            case 4:
+            break;
+            case 5:
+                // So sánh theo ===
+                console.log("Số 5");
+                
+            break;
+            case 6:
+            break;
+            case 7:
+            break; 
+            default:
+                console.log("Giá Trị Default");
+            
+        }
+
+        let date = Number(prompt("Nhập số từ 1 đến 7 để in ra thứ trong tuần"))
+
+        switch (date) {
+            case 1:
+                console.log("Số vứa nhập là Chủ Nhật");                
+                break;
+            case 2:
+                console.log("Số vứa nhập là Thứ 2");                
+                break;
+            case 3:
+                console.log("Số vứa nhập là Thứ 3");                
+            break;
+            case 4:
+                console.log("Số vứa nhập là Thứ tư");                
+            break;
+            case 5:
+                console.log("Số vứa nhập là Thứ Năm");                
+            break;
+            case 6:
+                console.log("Số vứa nhập là Thứ Sáu");                
+            break;
+            case 7:
+                console.log("Số vứa nhập là Thứ Bảy");                
+            break;
+        
+            default:
+                console.log("Số vứa nhập bị sai"); 
+                
+        }
+
+    </script>
+    
+</body>
+</html>

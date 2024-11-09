@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberA = 5
+        if (numberA > 4) {
+            console.log("Giá trị biến numberA > 4");
+            console.log(1);            
+        }
+        // falsy và truthy
+        // falsy : 0, undefined, NaN, Null, false...
+        // truthy là giá trị ngoài falsy
+        if (0) {
+            console.log("Condition = 0 Xin Chào");            
+        }
+        if (5) {
+            console.log("Condition = 5 kết quả là Xin Chào");            
+        }
+
+        if (0) {
+            console.log("Điều Kiện Thỏa mản");
+            
+        } else {
+            console.log("Điều Kiện Không Thỏa mản");            
+        }
+/* 
+        let userAge = prompt("Hãy nhập số tuổi của bạn")
+        if (userAge % 2 == 0) {
+            console.log("Số bạn vừa nhập",userAge,"Là Số Chẳn");            
+        }
+        else {
+            console.log("Số bạn vừa nhập",userAge,"Là Số Lẽ");
+            
+        } */
+
+        let nhapThu = prompt("Vui lòng nhập từ 1 đến 7")
+        if (nhapThu > 7) {
+            console.log("Giá Nhập Không hợp lệ ");       
+        } else if (nhapThu == 7) {
+            console.log("Giá Nhập vừa nhập là thứ bảy ");            
+        } else if (nhapThu == 6) {
+            console.log("Giá Nhập vừa nhập là thứ sáu ");            
+        } else if (nhapThu == 5) {
+            console.log("Giá Nhập vừa nhập là thứ năm ");            
+        } else if (nhapThu == 4) {
+            console.log("Giá Nhập vừa nhập là thứ tư ");            
+        } else if (nhapThu == 3) {
+            console.log("Giá Nhập vừa nhập là thứ ba ");            
+        } else if (nhapThu == 2) {
+            console.log("Giá Nhập vừa nhập là thứ hai ");            
+        } else {
+            console.log("Giá Nhập vừa nhập bị sai ");            
+        }
+
+    </script>
+</body>
+</html>

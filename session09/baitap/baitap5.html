@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sử dụng vòng lặp</title>
+</head>
+<body>
+    <script>
+        let userInput = prompt("Vui lòng nhập 1 số nguyên dương")
+        if (isNaN(userInput)) {
+            alert("Vui lòng nhập 1 số nguyên dương");
+            
+                      
+        } else if (userInput < 0) { 
+            alert("Vui lòng nhập 1 số nguyên dương")
+            
+        } else {
+            for (let i = 1 ; i <= userInput ; i++)
+            {document.write(i)  + "-";
+            console.log(i) + "<br>";}
+            
+        }
+    </script>
+    
+</body>
+</html>
