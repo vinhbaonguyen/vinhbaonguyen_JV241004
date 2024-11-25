@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm phần tử trùng lặp</title>
+</head>
+
+<body>
+    <script>
+        let numberArray = [2, 3, 4, 1, 1, 8, 2, 4, 5, 6, 2, 8, 1];
+        let resultArray = [];
+
+        for (let i = 0; i < numberArray.length; i++) {
+            let count = 0;
+            for (let j = 0; j < numberArray.length; j++) {
+                if (numberArray[i] == numberArray[j]) {
+                    count++
+                }
+            } if (count > 1) {
+                if (resultArray.includes(numberArray[i]) == false) {
+                    resultArray.push(numberArray[i])
+                };
+            }
+        }
+        document.write(resultArray)
+
+    </script>
+
+</body>
+
+</html>

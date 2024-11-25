@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng vòng lặp</title>
+</head>
+
+<body>
+
+    <script>
+        let numberArray = ["d", "b", "lemon", "d", "apple", "@has"]
+        let resultArray = []
+        for (let i = 0; i < numberArray.length; i++) {
+            if (Number.isInteger(numberArray[i])) {
+                resultArray.push(numberArray[i]);
+            }
+        }
+        if (resultArray.length != 0) {
+            console.log("There is Number is in Array");
+            document.write("There is Number is in Array")
+        }
+        else {
+            console.log("There is No Number is in Array");
+            document.write("There is No Number is in Array")
+        }
+
+
+    </script>
+
+</body>
+
+</html>

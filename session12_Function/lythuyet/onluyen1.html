@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let carts = [["mì tôm", 3], ["nước xúc miệng", 1]];
+        flag = -1;
+        function checkCart(product, quantity) {
+            for (let i = 0; i < carts.length; i++) {
+                if (carts[i][0] == product){
+                    flag = i;
+                    break
+                };
+            }
+            if (flag == -1) {
+                carts.push([product, quantity])
+                } else {
+                carts[flag][1] += quantity
+            }
+            console.log(carts);
+        }
+
+
+        /* checkCart("mì tôm", 2); */
+        checkCart("Bột Giật Omo", 3);
+
+    </script>
+</body>
+
+</html>

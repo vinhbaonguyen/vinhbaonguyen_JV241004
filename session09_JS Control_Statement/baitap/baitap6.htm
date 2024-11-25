@@ -8,14 +8,17 @@
 <body>
     <script>
         let userInput = Number(prompt("Vui Lòng nhập 1 số nguyên dương để tính giai thừa"))
+        // let userInput = +prompt("Vui Lòng nhập 1 số nguyên dương để tính giai thừa")
         if (isNaN(userInput)) {
             alert("Vui lòng nhập 1 số nguyên dương");            
         } else if (userInput < 0) {
             alert("Vui lòng nhập 1 số nguyên dương");             
         } else {
             let result = 1; 
-            for (let i = 1 ; i <= userInput; i++) {
-                result *= i                
+            for (let i = 2 ; i <= userInput; i++) {
+                result *= i 
+                console.log(i);
+                              
             }
             console.log("Kết quả tính giai thừa",result);
             document.write("Kết quả tính giai thừa ",result)

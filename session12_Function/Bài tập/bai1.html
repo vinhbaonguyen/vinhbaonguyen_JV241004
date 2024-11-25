@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        function searchMinnumber() {
+            userArrayNumber = []
+            for (let i=0;i<3;i++){
+                userArrayNumber.push(prompt("Nhập vào 1 số bất kỳ:"))
+            }
+            minNumber = userArrayNumber[0];
+            minNumberIndex = userArrayNumber.at(j);
+            for (let j=1;j<userArrayNumber.length;j++){
+                if(userArrayNumber[j]<minNumber){
+                    minNumber = userArrayNumber[j]
+                    minNumberIndex = userArrayNumber.at(j)
+                }
+
+            }console.log(`Số Min trong dãy là ${minNumber} có vị trí thứ ${minNumberIndex}`);
+            
+            
+        }
+        searchMinnumber()
+    </script>
+
+    
+</body>
+</html>

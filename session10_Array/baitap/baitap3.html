@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng vòng lặp</title>
+</head>
+<body>
+    <script>
+        let numberArray = [6,5,7,9,10,11,1,2,3,6,6,9]
+        let searchItem = +prompt("Nhập số nguyên bất kỳ")
+        var searchResult = [];
+        for (let number of numberArray) {
+            if (number == searchItem ) {
+                let position = numberArray.indexOf(number);
+                searchResult.push(position);
+                console.log(searchResult);
+            }
+        }
+        console.log(searchResult.length);
+        document.write(`The number has just input ${searchItem} have ${searchResult.length} times in array`)
+        
+        
+        
+    </script>
+    
+</body>
+</html>

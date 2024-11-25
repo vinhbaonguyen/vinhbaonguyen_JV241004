@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        function checkStringinArray() {
+            let arr = prompt("Vui lòng nhập 1 chuỗi ký tự bất kỳ để kiểm tra")
+            let lowercase = arr.toLowerCase()
+            let newLowercase =  [...new Set(lowercase)].join('')
+            for (let i=0;i<newLowercase.length;i++){
+                let count=0
+                for (let j=0;j<lowercase.length;j++){
+                    if(newLowercase[i]==lowercase[j]){
+                        count++
+                    }
+                }
+                console.log(`${newLowercase[i]} xuất hiện ${count}`);
+                console.log(newLowercase);
+                console.log(typeof(newLowercase));
+
+                
+                
+            }      
+        }
+        checkStringinArray()
+    </script>
+    
+</body>
+</html>

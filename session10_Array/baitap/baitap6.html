@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp mảng theo yêu cầu</title>
+</head>
+<body>
+    <script>
+        userInputArray = []
+        for (let i = 0; i < 6 ; i++) {
+            let userInput = +prompt("Nhập số dương bất kỳ");
+            userInputArray.push(userInput)
+        }
+        /* document.write(userInputArray.sort()) */
+        document.write(userInputArray.sort((userInputArray,b) => userInputArray-b))
+        // https://completejavascript.com/sap-xep-mang-trong-javascript/
+        
+    </script>
+    
+</body>
+</html>

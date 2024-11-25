@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let strUsername = "nguyen dinh vinh bao"
+        function changeUpper(params) {
+            let result = []
+            arrUsername = params.toLowerCase().split(" ")
+            for (let i = 0; i < arrUsername.length; i++) {
+                arrUsername[i] = arrUsername[i][0].toUpperCase() + arrUsername[i].slice(1);
+                             
+            } console.log(arrUsername.join(" "));
+                       
+        }
+        changeUpper(strUsername)
+    </script>
+    
+</body>
+</html>

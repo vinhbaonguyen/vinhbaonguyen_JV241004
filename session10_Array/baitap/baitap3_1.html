@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberArray = [6,5,7,9,10,11,1,2,3,6,6,9]
+        function checkNumber(params) {
+            let num = prompt("Nhập vào 1 số bất kỳ muốn tìm kiếm");
+            let count = 0;
+            for (let i = 0; i < params.length; i++) {
+                if (numberArray[i] == num){
+                    count++
+                };
+                }console.log(`Số cần tìm kiếm là ${num} có ${count} lần trong dãy số `);
+                
+            
+        }
+        checkNumber(numberArray)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viết hoa chữ cái đầu</title>
+</head>
+<body>
+    <script>
+        let userNameArr = ["nguyen van an", "phan van binh", "nguyen quy canh", "thai nguyen dat"]
+        let userName = "nguyen van an"
+        let userNameStr = "hello word"
+ /*        function changeUpperCase(str){
+            let newString = str.charAt(0).toUpperCase() + str.slice(1)
+            console.log(newString);                        
+            }            
+        
+        changeUpperCase(userNameStr) */
+
+        /* function changeUpperCaseArr(params) {
+            let result = []
+            for (i=0;i<params.length;i++){
+                result.push(params[i].charAt(0).toUpperCase() + params[i].slice(1));
+                ;                
+            }console.log(result)
+            
+        }
+
+        changeUpperCaseArr(userNameArr) */
+
+        function changeUpper(param) {
+            let paramchild = param.toLowerCase().split(" ")
+            for (let i=0;i<paramchild.length;i++){
+                paramchild[i] = paramchild[i].charAt(0).toUpperCase() + paramchild[i].slice(1)                         
+            }
+            console.log(paramchild.join(" ")) ;
+            ;
+             
+        }
+        changeUpper(userName)
+
+        function changeUpperforArray(params) {            
+            let result = new Array()
+            for (let i = 0; i < params.length; i++) {
+                result[i] = changeUpper(params[i]);                         
+                }
+            console.log(result);                       
+        }
+        changeUpperforArray(userNameArr)
+
+    </script>
+    
+</body>
+</html>

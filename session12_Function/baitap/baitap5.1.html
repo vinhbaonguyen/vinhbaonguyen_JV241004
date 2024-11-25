@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userNameArr = ["Nguyen Van A", "Phan Van B", "Nguyen Quy C", "Thai Nguyen D"]
+        let userSearch = prompt("Nhập vào chuỗi ký tự cần tìm")
+        function searchText(text) {
+            let result = []
+            flag = false;
+            for (i = 0; i < userNameArr.length; i++) {
+                console.log(userNameArr.length);
+                if (userNameArr[i].toLowerCase().includes(text.toLowerCase())) {
+                    flag = true;
+                    break
+                   
+                };
+            };
+
+            if (flag) {
+                result.push(userNameArr[i])
+            } else {
+                console.log("Không có chuỗi cần tìm trong Mảng")
+            };
+            
+            console.log(result)
+        }
+
+        searchText(userSearch)
+    </script>
+    
+</body>
+</html>

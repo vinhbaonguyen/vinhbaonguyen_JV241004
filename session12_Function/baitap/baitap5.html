@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng hàm tìm kiếm</title>
+</head>
+
+<body>
+    <script>
+        let userNameArr = ["Nguyen Van A", "Phan Van B", "Nguyen Quy C", "Thai Nguyen D"]
+        let userSearch = prompt("Nhập vào chuỗi ký tự cần tìm")
+        function searchText(text) {
+            let result = []
+            flag = false;
+            for (i = 0; i < userNameArr.length; i++) {
+                if (userNameArr[i].toLowerCase().includes(text.toLowerCase())) {
+                    result.push(userNameArr[i])
+                };
+            }
+            if (result.length != 0) {
+                console.log(`Có ${result.length} kết quả tìm kiếm tương ứng với text=${text} vừa nhập  là { ${result} }`)
+            } else {
+                console.log(`${text} cần tìm kiếm không tồn tại trong mảng`);
+            }
+        };
+
+
+
+
+
+        searchText(userSearch)
+    </script>
+
+</body>
+
+</html>

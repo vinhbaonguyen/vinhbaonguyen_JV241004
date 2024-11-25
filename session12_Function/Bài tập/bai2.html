@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        function checkPrime() {
+            let num = prompt("Nhập 1 số để kiểm tra có phải là số Nguyên hay không?")
+            count = 0;
+            for (let i = 1; i <= num; i++) {
+                if (num % i == 0){
+                    count++
+                };                
+            }
+            if (count==2){
+                console.log("Đây là số nguyên ");
+                document.write(`${num} là số nguyên dương`)             
+            } else {
+                console.log("Đây không phải là số nguyên dương");
+                document.write(`${num} Không phải là số nguyên dương`)
+                
+            }
+            
+        }
+        checkPrime()
+    </script>
+    
+</body>
+</html>

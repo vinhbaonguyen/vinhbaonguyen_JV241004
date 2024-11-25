@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra chẵn lẻ</title>
+</head>
+
+<body>
+    <script>
+        function checkEven() {
+            let numberArr = []
+            let a = prompt("Nhập vào 1 số tự nhiên a");
+            numberArr.push(a);
+            let b = prompt("Nhập vào 1 số tự nhiên b");
+            numberArr.push(b);
+            let c = prompt("Nhập vào 1 số tự nhiên c");
+            numberArr.push(c);
+            for (i = 0; i < numberArr.length; i++) {
+                if (numberArr[i] % 2 == 0) {
+                    console.log(`Số ${numberArr[i]} là số chẳn`);
+                } else {
+                    console.log(`Số ${numberArr[i]} là số lẻ`);                    
+                }
+            }
+        }
+
+        checkEven()
+    </script>
+
+</body>
+
+</html>

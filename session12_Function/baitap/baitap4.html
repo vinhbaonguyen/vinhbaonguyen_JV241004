@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀi tập 4</title>
+</head>
+
+<body>
+    <script>
+        let strUser = prompt("Hãy nhập 1 chuổi bất kỳ");
+        let textUser = prompt("Hãy nhập vào 1 ký tự bất kỳ muốn tìm kiếm")
+        function checkText(string, text) {
+            let count = 0;
+            for (let i = 0; i < string.length; i++) {
+                if (string[i] == text) {
+                    count++
+                };
+                }
+            console.log(`Số lần ký tự ${text} xuất hiện trong chuỗi ${string} là ${count}`);
+            }
+
+            checkText(strUser,textUser)
+
+    </script>
+
+</body>
+
+</html>

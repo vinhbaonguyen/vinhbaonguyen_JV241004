@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function checkEmail() {
+            let emails = ["hoa@gmail.com", "thu@gmail.com", "lan@gmail.com", "phuong@gmail.com"];
+            let flag = false;
+            let emailInputbyuser = prompt("Vui lòng nhập địa chỉ email muốn đăng ký")
+            for (let i = 0; i < emails.length; i++) {                
+                if (emails[i] == emailInputbyuser) {
+                    flag = true;
+                    break                    
+                }
+            }
+            if (flag==true) {
+                document.write("Địa chỉ email mà bạn muốn đăng ký đang được sử dụng")
+                }
+            else {
+                emails.push(emailInputbyuser);
+                document.write("Địa chỉ email đã được đăng ký Success :",emails)               
+            }            
+                }
+        
+        checkEmail()
+    </script>
+</body>
+</html>

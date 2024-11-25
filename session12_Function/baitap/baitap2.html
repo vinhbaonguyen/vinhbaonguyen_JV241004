@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap2</title>
+</head>
+<body>
+    <script>
+        let userNameArr = ["nguyen van tam an binh", "nguyen dinh vinh bao", "nguyen quy canh tam binh an", "thai nguyen dat"]
+        
+        function checkMaxlength(params) {
+            let max = params[0].length;
+            let max_name = params.at(0)
+            for (var i=1;i<params.length;i++){
+                if (params[i].length > max){
+                    max = params[i].length;
+                    max_name = params.at(i)
+                } else {
+                    max;
+                    max_name;
+                }               
+            } console.log(`${max}:${max_name}`);                                    
+        }
+
+        checkMaxlength(userNameArr)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập sử dụng mảng</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập vào 1 số nguyên dương a");
+        let b = +prompt("Nhập vào 1 số nguyên dương b");
+        let resultArray = [];
+        if (a > b) {
+            for (let i=1;i<a;i++){
+                if(i % b == 0){
+                    resultArray.push(i)
+                }
+            }
+            document.write(`Các Số từ 1 đến ${a} chia hết cho ${b} có kết quả là ${resultArray}`)
+        }
+        else {
+            for (let j=1;j<b;j++) {
+                if(j % a == 0){
+                    resultArray.push(j)
+                }
+            }
+            document.write(`Các Số từ 1 đến ${b} chia hết cho ${a} có kết quả là ${resultArray}`)
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
